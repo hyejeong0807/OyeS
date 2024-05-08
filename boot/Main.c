@@ -2,6 +2,7 @@
 #include "HalUart.h"
 
 #include "stdio.h"
+#include "stdbool.h"
 
 static void Hw_init(void);
 static void Printf_test(void);

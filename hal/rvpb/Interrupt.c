@@ -50,7 +50,7 @@ void Hal_interrupt_disable(uint32_t interrupt_num)
         return ;
     }
 
-    uint32_t bit_num = interrupt_num - GID_IRQ_START;
+    uint32_t bit_num = interrupt_num - GIC_IRQ_START;
 
     if (bit_num < GIC_IRQ_START) {
         CLR_BIT(GicDist->setenable1, bit_num);
